@@ -1,0 +1,87 @@
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j/ArrayStack.java
+ArrayStack,26--77
+total classes = 1
+ArrayStack,26
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j/Expression.java
+Expression,40--228
+total classes = 1
+Expression,297
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j/ExpressionBuilder.java
+ExpressionBuilder,30--192
+total classes = 1
+ExpressionBuilder,239
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j/ValidationResult.java
+ValidationResult,23--57
+total classes = 1
+ValidationResult,0
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\function/Function.java
+Function,22--124
+total classes = 1
+Function,81
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\function/Functions.java
+Functions,21--257
+total classes = 1
+Functions,81
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\operator/Operator.java
+Operator,21--133
+total classes = 1
+Operator,0
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\operator/Operators.java
+Operators,18--114
+total classes = 1
+Operators,0
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\shuntingyard/ShuntingYard.java
+ShuntingYard,29--104
+total classes = 1
+ShuntingYard,34
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\tokenizer/ArgumentSeparatorToken.java
+ArgumentSeparatorToken,21--28
+total classes = 1
+ArgumentSeparatorToken,0
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\tokenizer/CloseParenthesesToken.java
+CloseParenthesesToken,21--29
+total classes = 1
+CloseParenthesesToken,0
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\tokenizer/FunctionToken.java
+FunctionToken,20--30
+total classes = 1
+FunctionToken,0
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\tokenizer/NumberToken.java
+NumberToken,21--44
+total classes = 1
+NumberToken,0
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\tokenizer/OpenParenthesesToken.java
+OpenParenthesesToken,18--23
+total classes = 1
+OpenParenthesesToken,0
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\tokenizer/OperatorToken.java
+OperatorToken,23--45
+total classes = 1
+OperatorToken,0
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\tokenizer/ArgumentSeparatorToken.java
+ArgumentSeparatorToken,21--28
+total classes = 1
+Token,260
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\tokenizer/Tokenizer.java
+Tokenizer,26--290
+total classes = 1
+Tokenizer,260
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\tokenizer/UnknownFunctionOrVariableException.java
+UnknownFunctionOrVariableException,8--64
+total classes = 1
+UnknownFunctionOrVariableException,0
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\tokenizer/VariableToken.java
+VariableToken,21--40
+total classes = 1
+VariableToken,0
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j/ValidationResult.java
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\operator/Operator.java
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\operator/Operators.java
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\tokenizer/ArgumentSeparatorToken.java
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\tokenizer/CloseParenthesesToken.java
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\tokenizer/FunctionToken.java
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\tokenizer/NumberToken.java
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\tokenizer/OpenParenthesesToken.java
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\tokenizer/OperatorToken.java
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\tokenizer/UnknownFunctionOrVariableException.java
+D:\mutationtestingReduction\expData\exp4j-exp4j-0.4.8\src\main\java\net\objecthunter\exp4j\tokenizer/VariableToken.java
