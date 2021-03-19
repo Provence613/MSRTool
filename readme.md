@@ -4,7 +4,7 @@ MSRTool is a mutant set reduction tool for Java program using genetic algorithm.
 
 ## How to use
 
-Step 1: Clone the PerTether repository.
+Step 1: Clone the MSRTool repository.
 
 `git clone https://github.com/Provence613/MSRTool.git`
 
