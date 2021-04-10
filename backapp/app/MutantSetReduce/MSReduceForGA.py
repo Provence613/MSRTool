@@ -183,10 +183,10 @@ class MSReduceForGA:
         # 获取预测变异体集合质量的预测模型
         with open(modelpath, "rb") as f:
             model = pickle.load(f)
+        # 得到初始种群编码
+        population, indexList = self.getInitialPopulation(mutationSize, populationSize, boundarylist)
+        # 生成初始种群时已获得indexList,故不需要种群解码
         for iteration in range(max_iter):
-            # 得到初始种群编码
-            population, indexList = self.getInitialPopulation(mutationSize, populationSize, boundarylist)
-            # 生成初始种群时已获得indexList,故不需要种群解码
             # 得到个体适应度值和个体的累积概率
             evalvalues, cum_proba = self.getFittnessValue(model,indexList,df)
             # 选择新的种群
@@ -195,19 +195,36 @@ class MSReduceForGA:
             crossoverpopulation = self.crossover(newpopulations)
             # mutation
             mutationpopulation = self.mutation(crossoverpopulation)
+            totalpopulation=np.vstack((population,mutationpopulation))
+            nextpopulation=self.getNextpopulation(totalpopulation,model,populationSize,df)
             # 将变异后的种群解码，得到每轮迭代最终的种群的indexList
-            finalIndexList = self.decodedChromosome(mutationpopulation)
+            finalIndexList = self.decodedChromosome(nextpopulation)
             # 适应度评价
             fitnessvalues, cum_individual_proba = self.getFittnessValue(model,finalIndexList,df)
             # 搜索每次迭代的最优解，以及最优解对应的目标函数的取值
             optimalValues.append(np.max(list(fitnessvalues)))
             index = np.where(fitnessvalues == max(list(fitnessvalues)))
-            optimalSolutions.append(mutationpopulation[index[0][0], :])
+            optimalSolutions.append(nextpopulation[index[0][0], :])
+            population=nextpopulation
         # 搜索最优解
         optimalValue = np.max(optimalValues)
         optimalIndex = np.where(optimalValues == optimalValue)
         optimalSolution = optimalSolutions[optimalIndex[0][0]]
         return optimalSolution, optimalValue,mutationSize,df
+    
+    def getNextpopulation(self,totalpopulation,model,populationSize,df):
+        nextpopulation=[]
+        newIndexList=self.decodedChromosome(totalpopulation)
+        fitnessvalues, cum_individual_proba = self.getFittnessValue(model, newIndexList, df)
+        fitvlist = list(fitnessvalues)
+        fitvlist.sort(reverse=True)
+        for i in range(populationSize):
+            index = np.where(fitnessvalues == fitvlist[i][0])
+            nextpopulation.append(totalpopulation[index[0][0], :])
+        nextpopulation=np.array(nextpopulation)
+        # print(type(nextpopulation))
+        return nextpopulation
+
     def outputRes(self,solution,value,size,df,reduceRespath):
         print('最优解:')
         # print(solution)
